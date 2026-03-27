@@ -76,7 +76,7 @@ spec:
     spec:
       containers:
       - name: vote
-        image: 188612032057.dkr.ecr.ap-south-1.amazonaws.com/vote-app:latest
+        image: 188612032057.dkr.ecr.ap-south-1.amazonaws.com/vote:latest
 ---
 apiVersion: v1
 kind: Service
@@ -106,7 +106,7 @@ spec:
     spec:
       containers:
       - name: result
-        image: 188612032057.dkr.ecr.ap-south-1.amazonaws.com/result-app:latest
+        image: 188612032057.dkr.ecr.ap-south-1.amazonaws.com/result:latest
 ---
 apiVersion: v1
 kind: Service
@@ -136,4 +136,4 @@ spec:
     spec:
       containers:
       - name: worker
-        image: 188612032057.dkr.ecr.ap-south-1.amazonaws.com/worker-app:latest
+        image: 188612032057.dkr.ecr.ap-south-1.amazonaws.com/worker:latest
